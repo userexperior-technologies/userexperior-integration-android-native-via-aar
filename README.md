@@ -70,6 +70,8 @@ UserExperior will upload the data, which could be seen within 5-7 minutes on the
 		e.g. “Txn Completed”, “Checkout Done”, “COD Payment”, “Debit Card Payment”, “Login”, “Check Balance”, “Fund Transfer” etc.
 
 		Note: UserExperior does auto event tracking for most of the UI elements, add only those events which UserExperior didn’t auto track. (which can be known in few initial recorded sessions itself.)
+		
+		**Recommendation:** Kindly pass hardcoded/fixed values for events, do not pass incremental values!
 
 		Code Example:
 		
@@ -105,7 +107,7 @@ UserExperior will upload the data, which could be seen within 5-7 minutes on the
 
 3. **Mask Sensitive Views**
 
-	UserExperior SDK by default masks all the Edit Boxes. If you wish to mask any other UI element in your app, you can mask it by:
+	UserExperior SDK by default masks all the Edit Boxes of activities. If you wish to mask any other UI element in your app, you can mask it by:
 
 	-  Using XML Tag
 	
@@ -141,6 +143,8 @@ UserExperior will upload the data, which could be seen within 5-7 minutes on the
 		void startScreen(String screenName)
 	
 	Note: Max `screenName` limit is 250 chars only
+	
+	**Recommendation:** Kindly pass hardcoded/fixed values for screen names, do not pass incremental values!
 
 	Code Example:
 
